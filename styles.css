@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    margin:0;
+    flex-direction: column;
+}
+.mainBlock{
+    align-self: center;
+    background-color: white;
+    height: 515px;
+    width: 330px;
+    margin-top: 150px;
+}
+#illustration{
+    width: 85%;
+    display: block;
+    margin: auto;
+    height: 200px;
+    border-radius: 20px;
+}

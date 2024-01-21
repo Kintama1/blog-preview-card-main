@@ -1,21 +1,35 @@
-body {
+body{
     display: flex;
     background-color: hsl(47, 88%, 63%);
     height: 100vh;
     margin:0;
+    align-items: center;
+    justify-items: center;
     flex-direction: column;
+    
 }
 .mainBlock{
-    align-self: center;
+    flex: 1,5;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 515px;
-    width: 330px;
-    margin-top: 150px;
+    width: 340px;
+    border-radius: 20px;
 }
 #illustration{
-    width: 85%;
-    display: block;
-    margin: auto;
+    align-self: center;
+    width: 300px;
     height: 200px;
     border-radius: 20px;
+
+}
+#learning, #date,#title,#paragraph{
+    margin: 10px 20px;
+
+}
+.authorBlock{
+    display: flex;
+    flex-direction: row;
 }

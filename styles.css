@@ -1,35 +1,66 @@
-body{
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --lack: hsl(0, 0%, 7%);
+
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'figTree', sans-serif;
+}
+
+body {
     display: flex;
-    background-color: hsl(47, 88%, 63%);
-    height: 100vh;
+    background-color: var(--Yellow);
+    min-height: 100vh;
     margin:0;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     flex-direction: column;
-    
 }
-.mainBlock{
-    flex: 1,5;
-    background-color: white;
+
+main {
+    background-color: var(--White);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 515px;
-    width: 340px;
+    justify-content: space-evenly;
+    height: 525px;
+    width: 375px;
     border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px  var(--lack);
 }
-#illustration{
-    align-self: center;
-    width: 300px;
-    height: 200px;
-    border-radius: 20px;
 
+main:hover{
+    box-shadow: 8px 8px var(--lack);
+}
+#illustration {
+    justify-self: center;
+    align-self: center;
+    width: 336px;
+    height: 201px;
+    border-radius: 20px;
 }
 #learning, #date,#title,#paragraph{
     margin: 10px 20px;
-
+    font-size: 16px;
+}
+/* Essentially copied this from DzsDzske repository */
+#learning{
+   background-color: var(--Yellow);
+   /* So by increasing the padding, I increased inner background */
+   padding: 0.5rem;
+   border-radius: 8px;
+   font-weight: bold;
 }
 .authorBlock{
     display: flex;
     flex-direction: row;
+    
+}
+@font-face {
+    font-family: figTree;
+    src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
 }

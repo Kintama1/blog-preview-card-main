@@ -36,12 +36,19 @@ main {
 main:hover{
     box-shadow: 8px 8px var(--lack);
 }
+
+
+/* Block 1 illustration */
 #illustration {
     justify-self: center;
     align-self: center;
     width: 336px;
     height: 201px;
     border-radius: 20px;
+}
+/* Block 2 text */
+.textContainer{
+    margin-top: 17px;
 }
 #learning, #date,#title,#paragraph{
     margin: 10px 20px;
@@ -51,14 +58,46 @@ main:hover{
 #learning{
    background-color: var(--Yellow);
    /* So by increasing the padding, I increased inner background */
-   padding: 0.5rem;
-   border-radius: 8px;
-   font-weight: bold;
+   padding: 0.5rem 0.7rem;
+   border-radius: 5px;
+   font-weight: 800;
 }
+
+#date {
+    font-weight: 600;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+#title {
+    margin-top: 23px;
+    font-size: 1.45rem;
+}
+
+#title:hover{
+color: var(--Yellow);
+cursor: pointer;
+}
+
+#paragraph{
+    margin-top: 20px;
+    color: var(--Grey);
+}
+/* Block image+name */
 .authorBlock{
+    margin-left: 15px;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
+}
+#pPic{
+    height: 40px;
+}
+#name{
+    align-self: center;
+    margin-left: 12px;
+}
+.attribution{
+    margin-top: 20px;
 }
 @font-face {
     font-family: figTree;
